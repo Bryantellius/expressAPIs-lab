@@ -1,6 +1,7 @@
 # expressAPIs-lab
 
-REQUIRED
+# REQUIRED
+
 Setup an API with a project structure like:
 
 /client
@@ -31,7 +32,7 @@ Add the api router to the express app with the path /api.
 
 Test all of your methods using Postman (https://www.getpostman.com/)
 
-ADVANCED
+# ADVANCED
 
 Create an index.html, styles.css, and app.js file in the client folder.
 
@@ -49,4 +50,4 @@ When a chirp is clicked, popup a modal that lets you edit the chirp.
 
 Remember to use express.static middleware!
 
-HINT: jQuery functions for calling APIs: $.ajax, $.get, $.post
+HINT: jQuery functions for calling APIs: $.ajax, $.get, \$.post
