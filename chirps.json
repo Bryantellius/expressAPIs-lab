@@ -1,8 +1,8 @@
 {
-  "5": { "name": "Wil", "race": "Cealdish" },
-  "6": { "name": "Sim", "race": "Aturan" },
-  "7": { "name": "Kvothe", "race": "Edema Ruh" },
-  "8": { "name": "Tempi", "race": "Ademic" },
-  "9": { "name": "Felurian", "race": "Faen" },
+  "5": { "name": "Wil", "text": "Hello, I'm Cealdish." },
+  "6": { "name": "Sim", "text": "Hiya, I'm Aturan!" },
+  "7": { "name": "Kvothe", "text": "I'm of the Edema Ruh." },
+  "8": { "name": "Tempi", "text": "I'm from Ademre." },
+  "9": { "name": "Felurian", "text": "I'm from the Fae." },
   "nextid": 10
 }
