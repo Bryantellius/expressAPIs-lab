@@ -44,7 +44,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" id="modalSave" data-dismiss="modal">Save changes</button>
+            <button type="button" class="btn btn-primary" id="modalSave" data-dismiss="modal">Save changes</button>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@
     </div>
     <div class="col-sm-8">
         <div class="rounded p-2" id="chirpsBanner">
-            <button class="btn btn-dark" id="refresh">Refresh</button>
+            <button class="btn btn-dark" id="refresh" onclick={loadChirps()}>Refresh</button>
         </div>
         <div class="bg-light rounded" id="chirpsSection"></div>
     </div>
