@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Express APIs Lab</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>APIs with ExpressJS</h1>
+      </div>
+      <div class="justify-content-center w-50 mx-auto">
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Name"
+            class="form-control"
+            id="inputName"
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            type="text"
+            placeholder="Enter Text"
+            class="form-control"
+            id="chirpsTextArea"
+          ></textarea>
+        </div>
+        <div class="text-center">
+          <button class="btn btn-success btn-lg my-2" id="displayBtn">Post</button>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="http://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
