@@ -14,32 +14,82 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
+      <div class="bg-light text-center rounded shadow">
         <h1>APIs with ExpressJS</h1>
       </div>
-      <div class="justify-content-center w-50 mx-auto">
-        <div class="form-group">
-          <input
-            type="text"
-            placeholder="Name"
-            class="form-control"
-            id="inputName"
-          />
-        </div>
-        <div class="form-group">
-          <textarea
-            type="text"
-            placeholder="Enter Text"
-            class="form-control"
-            id="chirpsTextArea"
-          ></textarea>
-        </div>
-        <div class="text-center">
-          <button class="btn btn-success btn-lg my-2" id="displayBtn">Post</button>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Edit Chirp</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <input
+                type="text"
+                placeholder="Name"
+                class="form-control"
+                id="editName"
+                name="name"
+              />
+              <textarea
+                type="text"
+                placeholder="Enter Text"
+                class="form-control"
+                id="editTextArea"
+                name="text"
+              ></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="modalSave" data-dismiss="modal">Save changes</button>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="row my-5" id="mainDiv">
+        <div class="col-sm-4" id="inputSection">
+            <div class="justify-content-center mx-auto p-1 card">
+                <div class="card-title">
+                    <h3><u>Add Chirp</u></h3>
+                </div>
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Name"
+                class="form-control"
+                id="inputName"
+                name="name"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                type="text"
+                placeholder="Enter Text"
+                class="form-control"
+                id="chirpsTextArea"
+                name="text"
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-success btn-lg my-2" id="displayBtn">
+                Post
+              </button>
+            </div>
+        </div>
     </div>
-
+    <div class="col-sm-8">
+        <div class="rounded p-2" id="chirpsBanner">
+            <button class="btn btn-dark" id="refresh">Refresh</button>
+        </div>
+        <div class="bg-light rounded" id="chirpsSection"></div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script
       src="http://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
