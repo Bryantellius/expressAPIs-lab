@@ -1,15 +1,17 @@
 const express = require("express");
-const path = require("path");
 const cors = require("cors");
+const morgan = require("morgan");
+
 const apiRoutes = require("./routes");
 
-let app = express();
+const app = express();
 
+app.use(morgan("dev"));
 app.use(cors());
 app.use(express.json());
+app.use(express.static("client"));
 
 app.use("/api", apiRoutes);
 
-app.use(express.static(path.join(__dirname, "../client")));
 
-app.listen(3000);
+app.listen(3000, () => console.log("Server listening at port 3000."));
