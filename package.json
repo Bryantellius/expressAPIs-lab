@@ -4,7 +4,7 @@
   "description": "Covalence lab practicing the use of ExpressJS building APIs",
   "main": "index.js",
   "scripts": {
-    "server": "node server/server.js"
+    "dev": "nodemon server/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,10 @@
   "homepage": "https://github.com/Bryantellius/expressAPIs-lab#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
