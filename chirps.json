@@ -1,9 +1,1 @@
-{
-  "0": { "name": "Wil", "text": "Hello, I'm Cealdish." },
-  "1": { "name": "Sim", "text": "Hiya, I'm Aturan!" },
-  "2": { "name": "Kvothe", "text": "I'm of the Edema Ruh." },
-  "3": { "name": "Tempi", "text": "I'm from Ademre." },
-  "4": { "name": "Felurian", "text": "I'm from the Fae." },
-  "5": { "name": "Bilbo Baggins", "text": "I'm from the Shire." },
-  "nextid": 6
-}
+{"0":{"name":"Wil","text":"Hello, I'm Cealdish."},"1":{"name":"Sim","text":"Hiya, I'm Aturan!"},"2":{"name":"Kvothe","text":"I'm of the Edema Ruh."},"3":{"name":"Tempi","text":"I'm from Ademre."},"4":{"name":"Felurian","text":"I'm from the Fae."},"5":{"name":"Bilbo Baggins","text":"I'm from the Shire."},"6":{"name":"Ross Poldark","text":"I'm of Cornwall."},"7":{"name":"Abraham Woodhull","text":"I'm from Setauket, Long Island."},"nextid":8}
